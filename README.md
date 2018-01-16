@@ -1,1 +1,1 @@
-# RSO: Reviews microservice
+# RSO: Images microservice
