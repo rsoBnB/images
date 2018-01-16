@@ -1,15 +1,15 @@
 kumuluzee:
-  name: rso-reviews
+  name: rso-images
   env:
     name: dev
   version: 1.0.0
   server:
-    base-url: http://localhost:8083
+    base-url: http://localhost:8085
     http:
-      port: 8083
+      port: 8085
   datasources:
-    - jndi-name: jdbc/ReviewsDS
-      connection-url: jdbc:postgresql://172.17.0.1:33336/review
+    - jndi-name: jdbc/ImagesDS
+      connection-url: jdbc:postgresql://172.17.0.1:33338/image
       username: dbuser
       password: postgres
       max-pool-size: 20
@@ -22,14 +22,14 @@ kumuluzee:
   health:
     checks:
       data-source-health-check:
-        jndi-name: jdbc/ReviewsDS
+        jndi-name: jdbc/ImagesDS
   cors-filter:
     servlet:
       allow-origin: "*"
   metrics:
     web-instrumentation:
-      - name: orders-endpoint
-        url-pattern: /v1/orders/*
+      - name: images-endpoint
+        url-pattern: /v1/images/*
   logs:
     config-file: '<?xml version="1.0" encoding="UTF-8"?>
                   <Configuration name="orders">

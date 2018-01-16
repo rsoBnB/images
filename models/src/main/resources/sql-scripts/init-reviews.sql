@@ -1,3 +1,0 @@
-INSERT INTO reviews (id, title, description, submitted, user_id, realestate_id) VALUES (1, 'Nice Beach House', 'A very nice house at the beach. Thanks', TIMESTAMP '2017-03-01 11:23:38', 1, 1);
-INSERT INTO reviews (id, title, description, submitted, user_id, realestate_id) VALUES (2, 'Nice flat', 'A very nice flat at the beach. Thanks', TIMESTAMP '2017-04-12 01:12:38', 1, 2);
-INSERT INTO reviews (id, title, description, submitted, user_id, realestate_id) VALUES (3, 'Nice house', 'A very nice house at the beach. Thanks', TIMESTAMP '2017-06-17 12:00:08', 3, 3);

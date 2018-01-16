@@ -1,0 +1,3 @@
+INSERT INTO images (id, path, description, submitted, realestate_id) VALUES (1, 'https://www.assinc.com/blog/wp-content/uploads/2017/03/sub-zero-high-end-kitchen-e1493839205153.jpg', 'Nice Beach House Kitchen', TIMESTAMP '2017-03-01 11:23:38', 1);
+INSERT INTO images (id, path, description, submitted, realestate_id) VALUES (2, 'https://www.assinc.com/blog/wp-content/uploads/2017/03/sub-zero-high-end-kitchen-e1493839205153.jpg', 'Nice flat Living Room', TIMESTAMP '2017-04-12 01:12:38', 2);
+INSERT INTO images (id, path, description, submitted, realestate_id) VALUES (3, 'https://www.assinc.com/blog/wp-content/uploads/2017/03/sub-zero-high-end-kitchen-e1493839205153.jpg', 'Nice house Bathroom', TIMESTAMP '2017-06-17 12:00:08', 3);
