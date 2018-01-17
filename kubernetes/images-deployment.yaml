@@ -1,13 +1,13 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: image-deployment
+  name: images-deployment
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: image
+        app: images
     spec:
       containers:
       - image: ggrex/rsobnb-images:0.1
