@@ -11,20 +11,20 @@ import java.util.logging.Logger;
 
 @Health
 @ApplicationScoped
-public class ReviewServiceHealthCheck implements HealthCheck {
+public class ImagesServiceHealthCheck implements HealthCheck {
 
     @Inject
     private RestProperties restProperties;
 
-    private Logger log = Logger.getLogger(ReviewServiceHealthCheck.class.getName());
+    private Logger log = Logger.getLogger(ImagesServiceHealthCheck.class.getName());
 
     @Override
     public HealthCheckResponse call() {
 
         if (restProperties.isHealthy()) {
-            return HealthCheckResponse.named(ReviewServiceHealthCheck.class.getSimpleName()).up().build();
+            return HealthCheckResponse.named(ImagesServiceHealthCheck.class.getSimpleName()).up().build();
         } else {
-            return HealthCheckResponse.named(ReviewServiceHealthCheck.class.getSimpleName()).down().build();
+            return HealthCheckResponse.named(ImagesServiceHealthCheck.class.getSimpleName()).down().build();
         }
 
     }
